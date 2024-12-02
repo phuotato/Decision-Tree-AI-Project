@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Perimeter_Worst &le; 114.45<br/>entropy = 0.953<br/>samples = 455<br/>value = [285, 170]<br/>class = Benign>, fillcolor="#f5ccaf"] ;
+1 [label=<Concave_Points_Worst &le; 0.111<br/>entropy = 0.439<br/>samples = 308<br/>value = [280, 28]<br/>class = Benign>, fillcolor="#e88e4d"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Area_SE &le; 45.17<br/>entropy = 0.12<br/>samples = 245<br/>value = [241, 4]<br/>class = Benign>, fillcolor="#e5833c"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.039<br/>samples = 238<br/>value = [237, 1]<br/>class = Benign>, fillcolor="#e5823a"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.985<br/>samples = 7<br/>value = [4, 3]<br/>class = Benign>, fillcolor="#f8e0ce"] ;
+2 -> 4 ;
+5 [label=<Texture_Worst &le; 25.735<br/>entropy = 0.959<br/>samples = 63<br/>value = [39, 24]<br/>class = Benign>, fillcolor="#f5cfb3"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.371<br/>samples = 28<br/>value = [26, 2]<br/>class = Benign>, fillcolor="#e78b48"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.952<br/>samples = 35<br/>value = [13, 22]<br/>class = Malignant>, fillcolor="#aed7f4"] ;
+5 -> 7 ;
+8 [label=<Concave_Points_Mean &le; 0.05<br/>entropy = 0.214<br/>samples = 147<br/>value = [5.0, 142.0]<br/>class = Malignant>, fillcolor="#40a0e6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<Texture_Worst &le; 28.97<br/>entropy = 0.98<br/>samples = 12<br/>value = [5, 7]<br/>class = Malignant>, fillcolor="#c6e3f8"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.65<br/>samples = 6<br/>value = [5, 1]<br/>class = Benign>, fillcolor="#ea9a61"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.0<br/>samples = 6<br/>value = [0, 6]<br/>class = Malignant>, fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label=<entropy = 0.0<br/>samples = 135<br/>value = [0, 135]<br/>class = Malignant>, fillcolor="#399de5"] ;
+8 -> 12 ;
+}
