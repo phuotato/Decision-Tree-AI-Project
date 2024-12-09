@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<alcohol &le; 10.625<br/>entropy = 0.97<br/>samples = 3918<br/>value = [146, 2924, 848]<br/>class = Standard quality>, fillcolor="#79edaa"] ;
+1 [label=<volatile acidity &le; 0.212<br/>entropy = 0.702<br/>samples = 2267<br/>value = [106, 1957, 204]<br/>class = Standard quality>, fillcolor="#57e994"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<alcohol &le; 9.05<br/>entropy = 0.9<br/>samples = 616<br/>value = [15, 471, 130]<br/>class = Standard quality>, fillcolor="#74eda7"] ;
+1 -> 2 ;
+3 [label=<entropy = 1.141<br/>samples = 82<br/>value = [2, 40, 40]<br/>class = Standard quality>, fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.813<br/>samples = 534<br/>value = [13, 431, 90]<br/>class = Standard quality>, fillcolor="#67eb9e"] ;
+2 -> 4 ;
+5 [label=<volatile acidity &le; 0.515<br/>entropy = 0.568<br/>samples = 1651<br/>value = [91, 1486, 74]<br/>class = Standard quality>, fillcolor="#4ee88e"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.521<br/>samples = 1575<br/>value = [66, 1435, 74]<br/>class = Standard quality>, fillcolor="#4be78d"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.914<br/>samples = 76<br/>value = [25, 51, 0]<br/>class = Standard quality>, fillcolor="#9af2bf"] ;
+5 -> 7 ;
+8 [label=<free sulfur dioxide &le; 11.5<br/>entropy = 1.112<br/>samples = 1651<br/>value = [40, 967, 644]<br/>class = Standard quality>, fillcolor="#bff7d7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<residual sugar &le; 5.6<br/>entropy = 1.206<br/>samples = 106<br/>value = [22, 72, 12]<br/>class = Standard quality>, fillcolor="#89f0b4"] ;
+8 -> 9 ;
+10 [label=<entropy = 1.104<br/>samples = 85<br/>value = [21, 59, 5]<br/>class = Standard quality>, fillcolor="#89f0b4"] ;
+9 -> 10 ;
+11 [label=<entropy = 1.166<br/>samples = 21<br/>value = [1, 13, 7]<br/>class = Standard quality>, fillcolor="#aaf4c9"] ;
+9 -> 11 ;
+12 [label=<alcohol &le; 11.742<br/>entropy = 1.059<br/>samples = 1545<br/>value = [18, 895, 632]<br/>class = Standard quality>, fillcolor="#c6f8db"] ;
+8 -> 12 ;
+13 [label=<entropy = 1.01<br/>samples = 846<br/>value = [15.0, 570.0, 261.0]<br/>class = Standard quality>, fillcolor="#96f1bc"] ;
+12 -> 13 ;
+14 [label=<entropy = 1.032<br/>samples = 699<br/>value = [3, 325, 371]<br/>class = High quality>, fillcolor="#f0e7fc"] ;
+12 -> 14 ;
+}
