@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<clubbing_rete_ridges &le; 0.5<br/>entropy = 2.435<br/>samples = 292<br/>value = [89, 49, 57, 39, 42, 16]<br/>class = Class 1>, fillcolor="#fbeee4"] ;
+1 [label=<vacuolisation_damage_basal_layer &le; 0.5<br/>entropy = 2.245<br/>samples = 201<br/>value = [1, 49, 57, 39, 41, 14]<br/>class = Class 3>, fillcolor="#f5fef8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 1.932<br/>samples = 144<br/>value = [1, 49, 0, 39, 41, 14]<br/>class = Class 2>, fillcolor="#f7fdf0"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.0<br/>samples = 57<br/>value = [0, 0, 57, 0, 0, 0]<br/>class = Class 3>, fillcolor="#39e581"] ;
+1 -> 3 ;
+4 [label=<follicular_horn_plug &le; 0.5<br/>entropy = 0.239<br/>samples = 91<br/>value = [88, 0, 0, 0, 1, 2]<br/>class = Class 1>, fillcolor="#e68540"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<entropy = 0.089<br/>samples = 89<br/>value = [88, 0, 0, 0, 1, 0]<br/>class = Class 1>, fillcolor="#e5823b"] ;
+4 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 2<br/>value = [0, 0, 0, 0, 0, 2]<br/>class = Class 6>, fillcolor="#e5399d"] ;
+4 -> 6 ;
+}
