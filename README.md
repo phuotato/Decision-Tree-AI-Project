@@ -19,9 +19,9 @@ The goal of the project is to classify the data based on decision tree algorithm
 - **Link**: [Wine Quality Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality)  
 - **Description**: The dataset consists of 4898 wine samples classified into 11 quality categories (0 to 10). The classification is based on physicochemical properties like alcohol content, acidity, etc. This is a multi-class classification task.
 
-### 3. Additional Dataset  
-- A third dataset is chosen for the project. The dataset must contain both features and labels, at least 300 samples, and have either multiple classes or two binary classes.  
-- The dataset description and the source link will be provided in the report.
+### 3. Anemia Types Classification Dataset  
+- **Link**: https://www.kaggle.com/datasets/ehababoelnaga/anemia-types-classification
+- **Description**: 
 
 ## Project Specifications
 
@@ -49,7 +49,7 @@ The effect of the maximum depth (`max_depth`) of the decision tree on classifica
 
 ## Files in This Repository
 
-- `decision_tree_classifier.ipynb`: Jupyter notebook containing the main code for data preprocessing, training decision tree classifiers, and evaluating their performance.
+- `decision_tree_classifier1.ipynb`, `decision_tree_classifier2.ipynb`, `decision_tree_classifier3.ipynb`: Jupyter notebook containing the main code for data preprocessing, training decision tree classifiers, and evaluating their performance.
 - `data/`: Folder containing the datasets (in `.csv` or `.xlsx` format).
 - `plots/`: Folder containing the visualizations of decision trees and evaluation charts.
 - `requirements.txt`: List of Python packages required to run the project.
