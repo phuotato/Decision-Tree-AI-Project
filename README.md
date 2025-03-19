@@ -5,7 +5,7 @@
 This project implements decision tree classifiers using scikit-learn on three real-world datasets:  
 - **Breast Cancer Wisconsin (Diagnostic) Dataset**  
 - **Wine Quality Dataset**  
-- **An additional dataset** selected by you.
+- **Anemia Types Classification Dataset**
 
 The goal of the project is to classify the data based on decision tree algorithms, visualize the trees, evaluate their performance, and investigate how the depth of a decision tree influences accuracy.
 
